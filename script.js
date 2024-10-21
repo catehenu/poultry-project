@@ -26,7 +26,7 @@ mobileMenu.addEventListener('click', () => {
 });
 // Fetch the JSON data from the server and display the produce list
 function fetchProduce() {
-    fetch('http://localhost:3000/produce')
+    fetch('https://poultry-project.onrender.com/produce')
         .then(response => response.json())
         .then(data => {
             const produceList = document.getElementById('produce-list');
