@@ -1,0 +1,176 @@
+/* Body Styling */
+body {
+    font-family: 'Montserrat', sans-serif; /* Futuristic font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #212121; /* Dark background for a futuristic look */
+    color: #b44d4d; /* Text color for readability */
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark background for navbar */
+    padding: 10px 20px; /* Padding for navbar */
+    border-bottom: 2px solid #4CAF50; /* Green border for a futuristic touch */
+}
+
+.logo {
+    color: #fff; /* White logo text */
+    font-size: 24px; /* Logo font size */
+    font-weight: bold; /* Bold font for a futuristic look */
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Horizontal layout for nav links */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Spacing between nav items */
+}
+
+.nav-links a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+    color: #4CAF50; /* Change color on hover */
+    text-shadow: 0 0 10px #4CAF50; /* Add a futuristic glow effect */
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Vertical layout for bars */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.menu-toggle .bar {
+    height: 3px; /* Height of each bar */
+    width: 25px; /* Width of each bar */
+    background-color: #fff; /* White color for bars */
+    margin: 3px 0; /* Spacing between bars */
+    border-radius: 10px; /* Rounded corners for a futuristic look */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column; /* Vertical layout for mobile */
+        width: 100%; /* Full width for mobile */
+        background-color: #333; /* Background color for dropdown */
+        border-radius: 10px; /* Rounded corners for a futuristic look */
+    }
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
+    .menu-toggle {
+        display: flex; /* Show menu toggle on mobile */
+    }
+}
+
+/* Header Styling */
+header {
+    background-color: #4CAF50; /* Green background for header */
+    color: white; /* White text color for header */
+    text-align: center; /* Center align header text */
+    padding: 1em 0; /* Padding for header */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+/* Main Section Styling */
+main {
+    padding: 20px; /* Padding around the main content */
+    max-width: 1200px; /* Set a max width for main */
+    margin: 0 auto; /* Center the main content */
+}
+
+/* Section Styling */
+section {
+    background-color: #2c2c2c; /* Dark background for sections */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    margin: 20px auto; /* Center sections with auto margin */
+    padding: 20px; /* Padding inside sections */
+    max-width: 800px; /* Set a max width for sections */
+}
+
+/* Form Styling */
+form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Vertical layout */
+}
+
+label {
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+input[type="text"],
+textarea {
+    padding: 10px; /* Padding for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid #4CAF50; /* Green border */
+    background-color: #fff; /* White background for inputs */
+    color: #333; /* Dark text color for inputs */
+    margin-bottom: 15px; /* Space between inputs */
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 5px #4CAF50; /* Green glow on focus */
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50; /* Green button background */
+    color: white; /* White text for button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333; /* Dark background */
+    color: white; /* White text */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center text */
+}
+
+.footer-content {
+    max-width: 800px; /* Limit width */
+    margin: 0 auto; /* Center horizontally */
+}
+
+.footer-links {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+}
+
+.footer-links li {
+    display: inline; /* Display links inline */
+    margin: 0 15px; /* Spacing between links */
+}
+
+.footer-links a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
